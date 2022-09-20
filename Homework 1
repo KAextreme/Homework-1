@@ -1,0 +1,23 @@
+nums = list(range(30,65,5))
+print(nums)
+
+nums.append(65)
+nums.reverse()
+print(nums)
+
+emptylist = []
+emptylist.extend(range(0,21))
+emptylist.remove(0)
+print(emptylist)
+print(len(emptylist))
+print(max(emptylist))
+print(min(emptylist))
+print(sum(emptylist))
+
+weatherdict = {"Sunny": "play", "Rainy": "watch TV", "Cloudy": "walk"}
+weatherdict2 = {"snowy": "ski"}
+weatherdict.update(weatherdict2)
+print(weatherdict)
+
+for i in weatherdict:
+    print("When " + i + " let us " + weatherdict[i])
